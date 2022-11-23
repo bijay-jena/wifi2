@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">wifi2</string>
+    <string name="wifi_state">WiFi</string>
+    <string name="discover">Discover</string>
+    <string name="discovery_started">Discovery Started</string>
+    <string name="discovery_failed">Discovery Failed</string>
+    <string name="host">Host</string>
+    <string name="client">Client</string>
+    <string name="dvc_discon">Device Disconnected</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="connection_status">Connection Status</string>
+</resources>
