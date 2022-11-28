@@ -6,8 +6,11 @@
     <string name="discovery_failed">Discovery Failed</string>
     <string name="host">Host</string>
     <string name="client">Client</string>
+    <string name="dvc_con">Device Connected</string>
     <string name="dvc_discon">Device Disconnected</string>
     <string name="message">Message</string>
     <string name="send">Send</string>
     <string name="connection_status">Connection Status</string>
+    <string name="connect">Connect</string>
+    <string name="hotspot">Hotspot</string>
 </resources>
