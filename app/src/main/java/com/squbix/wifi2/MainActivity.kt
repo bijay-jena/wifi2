@@ -1,17 +1,9 @@
 package com.squbix.wifi2
 
-import android.Manifest
-import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
 import android.content.Intent
 import android.content.IntentFilter
-import android.content.pm.PackageManager
-import android.net.ConnectivityManager
-import android.net.ConnectivityManager.NetworkCallback
-import android.net.NetworkCapabilities
-import android.net.NetworkRequest
 import android.net.wifi.WifiManager
-import android.net.wifi.WifiNetworkSpecifier
 import android.net.wifi.p2p.WifiP2pManager
 import android.os.Build
 import android.os.Bundle
@@ -20,7 +12,6 @@ import android.util.Log
 import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
 
 
 class MainActivity : AppCompatActivity() {
@@ -71,8 +62,8 @@ class MainActivity : AppCompatActivity() {
 //        }
 
         if(wifiManager.isEasyConnectSupported){
-            val intent = Intent("android.settings.WIFI_DPP_ENROLLEE_QR_CODE_SCANNER");
-            startActivity(intent);
+            val intent = Intent("android.settings.WIFI_DPP_ENROLLEE_QR_CODE_SCANNER")
+            startActivity(intent)
         }
 
 //        val conf = WifiNetworkSpecifier.Builder()
@@ -110,7 +101,6 @@ class MainActivity : AppCompatActivity() {
         if(wifiManager.isEasyConnectSupported){
             try {
                 val intent = Intent(Settings.ACTION_PROCESS_WIFI_EASY_CONNECT_URI)
-                intent.setData()
                 startActivity(intent)
             } catch(e: java.lang.Exception) {
                 Log.e("Catch",e.toString())
